@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 108, 168);
+}
+#innerLogo {
+  width: 15px;
+  position: relative;
+  top: 0px;
+  left: 10px;
+  filter: brightness(110%);
+}
+
+@media only screen and (max-width: 714px) {
+  #name {
+    display: none;
+  }
+
+  #name_title {
+    display: none;
+  }
+
+  #symbol {
+    display: none;
+  }
+
+  #symbol_title {
+    display: none;
+  }
+
+  #volume_24h {
+    display: none;
+  }
+
+  #volume_24h_title {
+    display: none;
+  }
+
+  #market_cap {
+    display: none;
+  }
+
+  #market_cap_title {
+    display: none;
+  }
+
+  #chart_title {
+    display: none;
+  }
+
+  #chart {
+    display: none;
+  }
+
+  td {
+    text-align: left;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .superSmall {
+    font-size: 7px;
+    font-weight: 200;
+  }
+
+  .logo {
+    padding: 0px 28px 0px 10px;
+  }
+
+  .table {
+    margin: 0rem 0rem 1.4rem;
+  }
+
+  .pagination a {
+    color: rgb(47, 51, 64);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    float: left;
+    padding: 9px 14px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    border: 1px solid rgb(247, 247, 247);
+    margin: 0 4px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 1px;
+  }
+}
+
+@media only screen and (min-width: 715px) {
+  #invisible {
+    display: none;
+  }
+
+  #invisible_title {
+    display: none;
+  }
+
+  #invisible_two {
+    display: none;
+  }
+
+  #invisible_two_title {
+    display: none;
+  }
+
+  td {
+    text-align: left;
+    padding: 14px 8px;
+    font-size: 1rem;
+  }
+
+  .superSmall {
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .table {
+    margin: 1.4rem;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7);
+  }
+
+  .pagination a {
+    color: rgb(47, 51, 64);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    float: left;
+    padding: 12px 18px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    border: 1px solid rgb(247, 247, 247);
+    margin: 0 4px;
+    border-radius: 1px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+}
+.chart {
+  width: 120px;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.small {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.ultraSmall {
+  font-size: 0.4rem;
+  font-weight: 400;
+  color: rgb(124, 67, 255);
+}
+
+.superSmallPrice {
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: rgba(123, 67, 255, 0.5);
+}
+
+.purple_text {
+  color: rgb(124, 67, 255);
+}
+
+.cyan-text {
+  color: rgb(49, 173, 182);
+}
+
+.green-text {
+  color: rgb(17, 126, 0);
+}
+
+.grey_text {
+  color: rgb(158, 158, 158);
+}
+
+.dark_grey_text {
+  color: rgb(96, 96, 96);
+}
+
+.tomato-text {
+  color: rgb(232, 55, 45);
+}
+
+.yellow_text {
+  color: rgb(248, 161, 54);
+}
+
+.white_text {
+  color: white;
+}
+
+.greyBlue_text {
+  color: rgb(56, 60, 75);
+}
+
+.greyLightBG {
+  background-color: rgb(190, 187, 187, 0.95);
+}
+
+.white_BG {
+  background-color: #ffffff;
+}
+
+.gradBG {
+  background-image: linear-gradient(
+    to right,
+    rgba(190, 187, 187, 0.95),
+    rgba(174, 172, 172, 0.95)
+  );
+  padding: 0px;
+}
+
+.gradVertical {
+  background-image: linear-gradient(rgb(14, 57, 80), rgb(14, 52, 72));
+}
+
+.title_table {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: rgb(79, 130, 160);
+  padding: 0.5rem;
+}
+
+.bold_text {
+  font-weight: 600;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.loading {
+  color: rgba(68, 68, 68);
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.name {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  width: 17%;
+}
+
+.symbol {
+  width: 8%;
+}
+
+.tdOverride {
+  padding: 0.8rem;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.borderBottom {
+  border-bottom: 0.1rem solid rgb(244, 244, 244);
+}
+
+/*export PORT=5555*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  padding: 16px 8px;
+  border-bottom: 1px solid rgb(40, 43, 53);
+}
+
+.shadow {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.textShadowGrey {
+  text-shadow: 0px 0px 21px rgb(164, 164, 164), 0px 0px 7px rgb(201, 201, 210);
+}
+
+.textShadowBlue {
+  text-shadow: 0px 0px 21px rgb(57, 62, 77), 0px 0px 15px rgb(66, 71, 89);
+}
+
+.headTopBorder {
+  border-top: 1px solid rgb(41, 44, 82);
+}
+
+.headLeftBorder {
+  border-left: 1px solid rgb(41, 44, 82);
+}
+
+.headRightBorder {
+  border-right: 1px solid rgb(41, 44, 82);
+}
+
+.headRightBorderGrey {
+  border-right: 1px solid rgb(156, 155, 155);
+}
+
+.LeftBorder {
+  border-left: 1px solid rgb(200, 200, 212);
+}
+
+/* .gg{
+	box-shadow: 11px 12px 6px blue;
+}
+*/
+.pagination {
+  display: inline-block;
+}
+
+.paginationWrap {
+  float: right;
+  margin: 0 1.2rem;
+}
+
+.pagination a.active {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.612);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: rgb(225, 225, 225);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.prevPage {
+  opacity: 0.6;
+}
+.nextPage {
+  opacity: 0.6;
+}
+
+.transparent {
+  display: none;
+  /* opacity: 0.5; */
+}
+.lightTransparent {
+  opacity: 0.4;
+}
+
+.pagination a.lastPage {
+  opacity: 0.2;
+  border-radius: 0px 45px 45px 0px;
+}
+.pagination a.firstPage {
+  opacity: 0.2;
+
+  border-radius: 45px 0px 0px 45px;
+}
+
+.wrap {
+  padding: 0 0 60px;
+}
+
+.backText {
+  font-size: 0.4rem;
+  font-weight: bold;
+  color: rgb(14, 57, 80);
+  margin: 1rem 0 0 1.3rem;
+}
+.pagination a.prevPage {
+  opacity: 0.8;
+}
+.pagination a.nextPage {
+  opacity: 0.8;
+}
+
+.transparent {
+  display: none;
+  /* opacity: 0.5; */
+}
+.pagination a.lightTransparent {
+  opacity: 0.6;
+}
+
+.pagination a.lastPage {
+  opacity: 0.9;
+  border-radius: 0px 22px 22px 0px;
+  background-image: linear-gradient(rgb(14, 57, 80), rgb(14, 52, 72));
+  border-color: rgb(14, 52, 72);
+  color: rgb(79, 130, 160);
+}
+.pagination a.firstPage,
+a.lastPage {
+  opacity: 0.9;
+
+  border-radius: 22px 0px 0px 22px;
+  background-image: linear-gradient(rgb(14, 57, 80), rgb(14, 52, 72));
+  border-color: rgb(14, 52, 72);
+  color: rgb(79, 130, 160);
+}
