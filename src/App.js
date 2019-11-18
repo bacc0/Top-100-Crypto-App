@@ -37,7 +37,7 @@ export default class App extends Component{
 
 				<div className='wrap'>
 
-					<div className=''> TOP 100 CRYPTOCURRENCIES </div>
+					<div className=''> TOP <strong>99</strong> CRYPTO-CURRENCIES </div>
 
 					<div className='table'>
 

@@ -30,7 +30,7 @@ static getDerivedStateFromProps( nextProps, prevState ) {
                               <span key='number' >
                                    
                                    <a onClick = { () => paginate(pageNumber) } 
-                                        href = '!#' 
+                                        href = '#' 
                                         className = {  activeClass        ===  pageNumber ? 'active'           : '' ||                   
                                                        pageNumbers[0]     ===  pageNumber ? 'firstPage'        : '' ||
                                                        activeClass - 2    ===  pageNumber ? 'lightTransparent' : '' ||
