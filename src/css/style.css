@@ -65,21 +65,7 @@ body {
 		padding: 0px 28px 0px 10px;
 	}
   
-	.pagination a {
-		color: rgb(47, 51, 64);
-		font-family: "Lato", sans-serif;
-		font-weight: 400;
-		float: left;
-		padding: 9px 14px;
-		text-decoration: none;
-		background-color: rgb(255, 255, 255);
-		transition: background-color 0.3s;
-		border: 1px solid rgb(247, 247, 247);
-		margin: 0 4px;
-		border-radius: 1px;
-		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
-		border-radius: 1px;
-	}
+	
 }
 @media only screen and (min-width: 480px) {
 	#invisible {
@@ -104,20 +90,6 @@ body {
 		font-weight: 200;
 	}
 
-	.pagination a {
-		color: rgb(47, 51, 64);
-		font-family: "Lato", sans-serif;
-		font-weight: 600;
-		float: left;
-		padding: 12px 18px;
-		text-decoration: none;
-		background-color: rgb(255, 255, 255);
-		transition: background-color 0.3s;
-		border: 1px solid rgb(247, 247, 247);
-		margin: 0 4px;
-		border-radius: 1px;
-		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
-	}
 }
 .chart {
 	/* width: 120px; */
@@ -256,22 +228,8 @@ th {
 	border-left: 1px solid rgb(200, 200, 212);
 }
 
-.pagination {
-	display: inline-block;
-}
-.paginationWrap {
-	float: right;
-	margin: 0 1.2rem;
-}
-.pagination a.active {
-	background-color: rgb(255, 255, 255);
-	border: 1px solid rgb(255, 255, 255);
-	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.612);
-}
-.pagination a:hover:not(.active) {
-	background-color: rgb(220, 220, 225);
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
+
+
 .prevPage {
 	opacity: 0.6;
 }
@@ -284,14 +242,7 @@ th {
 .lightTransparent {
 	opacity: 0.4;
 }
-.pagination a.lastPage {
-	opacity: 0.2;
-	border-radius: 0px 45px 45px 0px;
-}
-.pagination a.firstPage {
-	opacity: 0.2;
-	border-radius: 45px 0px 0px 45px;
-}
+
 .wrap {
 	padding: 0 0 0px;
 }
@@ -301,32 +252,12 @@ th {
 	color: rgb(14, 57, 80);
 	margin: 1rem 0 0 1.3rem;
 }
-.pagination a.prevPage {
-	opacity: 0.8;
-}
-.pagination a.nextPage {
-	opacity: 0.8;
-}
+
 .transparent {
 	display: none;
 }
-.pagination a.lightTransparent {
-	opacity: 0.6;
-}
-.pagination a.lastPage {
-	opacity: 0.9;
-	border-radius: 0px 22px 22px 0px;
-	background-image: linear-gradient(rgb(14, 57, 80), rgb(14, 52, 72));
-	border-color: rgb(14, 52, 72);
-	color: rgb(79, 130, 160);
-}
-.pagination a.firstPage,a.lastPage {
-	opacity: 0.9;
-	border-radius: 22px 0px 0px 22px;
-	background-image: linear-gradient(rgb(14, 57, 80), rgb(14, 52, 72));
-	border-color: rgb(14, 52, 72);
-	color: rgb(79, 130, 160);
-}
+
+
 .element:hover {
 	background: rgb(251,251,251);
 	background: linear-gradient(0deg, rgba(251,251,251,1) 0%, rgba(254,254,254,1) 49%, rgba(251,251,251,1) 100%);

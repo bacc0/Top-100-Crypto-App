@@ -14,22 +14,9 @@ export default class LineChart extends Component {
             super(props);
 
             this.state = {
-                  chartData       : [] ,
-                  // chartData : props.chartData
+                  chartData       : [] 
             }
       }
-
-      // static getDerivedStateFromProps( nextProps, prevState ) {
-      //       if (nextProps.chartData !== prevState.chartData) {
-                  
-      //             return { chartData: nextProps.chartData };
-      //       }
-      //                         if (nextProps.input !== prevState.input) {
-                  
-      //                               return { chartData: nextProps.input };
-      //                         }
-            
-      //       else return null;
 
             static getDerivedStateFromProps( nextProps, prevState ) {
                   if (nextProps.input !== prevState.input) {

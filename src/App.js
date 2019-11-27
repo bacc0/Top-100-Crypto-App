@@ -1,8 +1,7 @@
 import React              from 'react';
 import { Component }      from 'react';
 import Table              from './components/Table';
-import    Pagination      from './components/Pagination';
-import { helperPaginate } from './helpers/helperPaginate'
+
 
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -16,7 +15,6 @@ export default class App extends Component{
 		hasMore     :  true,
 		counter     :  0
 	}
-	
 	
 	render() {
 		
@@ -48,11 +46,10 @@ export default class App extends Component{
 
 		this.loadCoins();
 		
-		
 		setInterval(async () => {
 
 			this.loadMore() 
-			 this.updateCoins();
+			 	this.updateCoins();
 			 
 		}, 25000);
 	}
@@ -71,7 +68,6 @@ export default class App extends Component{
 		}))
 
 		this.loadCoins();
-		// this.loadChart();
 	}
 	
 	async  loadCoins() {
@@ -83,58 +79,24 @@ export default class App extends Component{
 			const response = await fetch(url, { cache: "no-store" }); 
 			const dataJSON = await response.json();
 			
-			// console.log(response.status);
-
 			this.setState({
 				coins : coins.concat(dataJSON),
 				
 			});
-
-			// this.loadChart();
 
 		} catch (error) {
 			console.log(error)
 		}
 	}
 
-	// async loadChart() {
-
-	// 	console.log('loadChart');
-
-	// 		const { coins , counter} = this.state;
-	// 		const url = '/instruments';
-	// 	try {
-	// 		const response = await fetch( url ); 
-	// 		const dataJSON = await response.json();
-
-	// 		if ( counter === 0 ) {
-	// 			this.setState({
-	// 				coins   : dataJSON,
-	// 				counter : counter + 1
-	// 			});
-	// 		} else {
-	// 			this.setState({
-	// 				coins   : coins.concat(dataJSON)
-	// 			});
-	// 		}
-			
-
-	// 	} catch (error) {
-	// 		console.log(error)
-	// 	}
-	// }	
-
-
 	async  updateCoins() {
-// console.log("change")
+
 			const url = "/instruments";
 		try {
 
 			const response = await fetch(url, { cache: "no-store" });
 			const dataJSON = await response.json();
 			
-			// console.log(response.status);
-
 			this.setState({
 				coins: dataJSON
 			});
