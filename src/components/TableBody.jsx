@@ -20,49 +20,55 @@ export default class TableBody extends Component{
             super(props);
   
             this.state = {
-                  currentCoins : props.input
+                  currentCoins   : props.input,
+                  tableVisibility: props.tableVisibility
             }
        }
-
 
        static getDerivedStateFromProps( nextProps, prevState ) {
-            if (nextProps.input !== prevState.input) {
-                  
-                  return { currentCoins: nextProps.input };
-            }
-            else return null;
+
+             if (nextProps.tableVisibility !== prevState.tableVisibility) {
+
+                   return { tableVisibility: nextProps.tableVisibility };
+             }
+             if (nextProps.input !== prevState.input) {
+
+                   return { currentCoins: nextProps.input };
+             }
+
+             else return null;
        }
+
 
       render(){
 
             const { currentCoins } = this.state;
-      
+            
             let chartBodyMap = currentCoins.map( coin => (
                   
-                  <tr key = {coin._id}>
+                  <tr className='element'  key       =  { coin._id }>
 
-                        <LogoPic          logoPic  =  { coin.id } />
+                        <LogoPic           logoPic   =  { coin.id } />
 
-                        <InvisibleMenu    symbol   =  { coin.symbol } name = { coin.name } />
+                        <InvisibleMenu     symbol    =  { coin.symbol } name = { coin.name } />
 
-                        <Symbol           symbol   =  { coin.symbol } />
+                        <Symbol            symbol    =  { coin.symbol } />
 
-                        <Name             name     =  { coin.name } />
+                        <Name              name      =  { coin.name } />
 
-                        <Price            input    =  { coin.price_time } />
+                        <Price             input     =  { coin.price} />
 
-                        <PercentChange24h input    =  { coin.percent_change_24h } />
-                        
-                        <Chart            input    =  { coin.price_time } />
+                        <PercentChange24h  input     =  { coin.percent_change_24h } />
 
-                        <Volume24h        input    =  { coin.volume_24h } />
+                        <Chart             input     =  { coin.price_time } /> 
 
-                        <InvisibleMenuTwo inputVol =  { coin.volume_24h }  inputCap = { coin.market_cap } />
+                        <Volume24h         input     =  { coin.volume_24h } />
 
-                        <MarketCap        input    =  { coin.market_cap } />
+                        <InvisibleMenuTwo  inputVol  =  { coin.volume_24h }  inputCap = { coin.market_cap } />
 
-                        <Supply           input    =  { coin.circulating_supply } symbolCurrency = { coin.symbol } />
+                        <MarketCap         input     =  { coin.market_cap } />
 
+                        <Supply            input     =  { coin.circulating_supply } symbolCurrency = { coin.symbol } />
                   </tr>   
             ))
             return <tbody>{ chartBodyMap }</tbody>

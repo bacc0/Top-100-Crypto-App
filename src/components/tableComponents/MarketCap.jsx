@@ -28,7 +28,7 @@ static getDerivedStateFromProps( nextProps, prevState ) {
           const { market_cap } = this.state;
 
           return (
-               <td className='borderBottom white_BG' id='market_cap'>
+               <td className='borderBottom centerText white_BG elHover_num' id='market_cap'>
 
                     { <span className='superSmall grey_text'>&#36;</span> }
 

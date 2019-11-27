@@ -29,7 +29,7 @@ static getDerivedStateFromProps( nextProps, prevState ) {
 
           return (
 
-               <td className='centerText bold_text borderBottom white_BG'  > 
+               <td className='centerText bold_text borderBottom white_BG elHover'  > 
 
                     <span className={ percentageColor(percent_change_24h) }>
                                     {      toFixedTwo(percent_change_24h) }</span>

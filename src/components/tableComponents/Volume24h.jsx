@@ -27,7 +27,7 @@ static getDerivedStateFromProps( nextProps, prevState ) {
           const { volume_24h } = this.state;
 
           return (
-               <td id='volume_24h' className='borderBottom white_BG'>
+               <td id='volume_24h' className='borderBottom centerText white_BG elHover_num'>
 
                     <span className='superSmall grey_text'>&#36;</span>
 

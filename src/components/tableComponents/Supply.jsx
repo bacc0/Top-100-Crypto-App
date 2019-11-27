@@ -11,7 +11,7 @@ export default class Supply extends Component {
 
           this.state = {
                circulating_supply : 0,
-               symbol: props.symbolCurrency
+               symbol: props.symbolCurrency || 'hide'
           }
      }
 
@@ -27,7 +27,7 @@ static getDerivedStateFromProps( nextProps, prevState ) {
                const { circulating_supply, symbol } = this.state;
 
                return (
-                    <td className='borderBottom white_BG'>
+                    <td id='supply' className='borderBottom white_BG elHover_num'>
 
                          <span className='greyBlue_text'>{ splitEveryThreeDigit(circulating_supply) }</span>
 
