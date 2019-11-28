@@ -56,7 +56,7 @@ export default class TableBody extends Component{
 
                         <Name              name      =  { coin.name } />
 
-                        <Price             input     =  { coin.price} />
+                        <Price            input    =  { coin.price } />
 
                         <PercentChange24h  input     =  { coin.percent_change_24h } />
 

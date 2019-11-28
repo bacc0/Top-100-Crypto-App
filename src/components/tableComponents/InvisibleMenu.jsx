@@ -13,10 +13,9 @@ export const InvisibleMenu = ({symbol, name}) =>
 
           </span>
           
-     <br/>
+          <br/>
 
           <span className='grey_text name'>{ name }</span>
-
      </td>
 );
 

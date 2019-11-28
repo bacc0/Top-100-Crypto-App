@@ -36,7 +36,7 @@ export default class Table extends Component{
 
 				<TableHead />
 
-				<TableBody input = { currentCoins } tableVisibility = { tableVisibility }/>
+				<TableBody input = { currentCoins } />
 
 			</table>
 		)

@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 
-
 export const Symbol = ({ symbol }) => (
      
      <td id='symbol' 

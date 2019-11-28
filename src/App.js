@@ -16,9 +16,10 @@ export default class App extends Component{
 		counter     :  0
 	}
 	
+	
 	render() {
 		
-		const { count, coins, starts, hasMore, isReadyLoad } = this.state;
+		const { count, coins, starts, hasMore } = this.state;
 
 		return (
 
@@ -34,7 +35,7 @@ export default class App extends Component{
 								</div> }
 				>
 					<div className='table'>
-						< Table  input = { coins } tableVisibility = { isReadyLoad }/>
+						< Table  input = { coins } />
 					</div>
 
 				</InfiniteScroll>
@@ -46,10 +47,11 @@ export default class App extends Component{
 
 		this.loadCoins();
 		
+		
 		setInterval(async () => {
 
-			this.loadMore() 
-			 	this.updateCoins();
+			 this.loadMore();
+			 this.updateCoins();
 			 
 		}, 25000);
 	}
@@ -60,7 +62,7 @@ export default class App extends Component{
 		const { starts, count } = this.state;
 
 		let hasMoreHelper = true;
-		if ( starts >= 56 ) hasMoreHelper = false;
+		if ( starts >= 100 ) hasMoreHelper = false;
 
 		this.setState( ({
 			starts  : starts + count,
@@ -68,6 +70,7 @@ export default class App extends Component{
 		}))
 
 		this.loadCoins();
+		
 	}
 	
 	async  loadCoins() {
@@ -79,10 +82,15 @@ export default class App extends Component{
 			const response = await fetch(url, { cache: "no-store" }); 
 			const dataJSON = await response.json();
 			
+			// console.log(response.status);
+
 			this.setState({
 				coins : coins.concat(dataJSON),
 				
 			});
+
+			console.log(coins)
+			console.log('coins')
 
 		} catch (error) {
 			console.log(error)
@@ -90,13 +98,15 @@ export default class App extends Component{
 	}
 
 	async  updateCoins() {
-
+console.log("change")
 			const url = "/instruments";
 		try {
 
 			const response = await fetch(url, { cache: "no-store" });
 			const dataJSON = await response.json();
 			
+			// console.log(response.status);
+
 			this.setState({
 				coins: dataJSON
 			});

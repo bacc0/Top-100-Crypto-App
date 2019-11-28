@@ -14,7 +14,7 @@ export default class LineChart extends Component {
             super(props);
 
             this.state = {
-                  chartData       : [] 
+                  chartData       : [] ,
             }
       }
 
@@ -32,9 +32,9 @@ export default class LineChart extends Component {
 
 
             return (
-                  <div className='borderBottom elHover'>
+                  <div className='borderBottom elHover chart'>
                         <div >
-                              <td id ='chart' className='chart white_BG'>  
+                              <td id ='chart' className=' white_BG'>  
                                     <Chart
                                           data      =  {chartDataHelper(chartData)}
                                           width     =  {'160px'}
