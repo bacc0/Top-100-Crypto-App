@@ -1,4 +1,7 @@
 To the App:    https://top-cryptocurrency.herokuapp.com
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://s3.amazonaws.com/assets.heroku.com/addons.heroku.com/screenshots/1241/medium.png?1565861897)
 ##
 ##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
