@@ -1,6 +1,6 @@
 To the App:    https://top-cryptocurrency.herokuapp.com
 
-![GitHub Logo](/images/logo.png)
+(/images/logo.png)
  ![Alt Text](https://s3.amazonaws.com/assets.heroku.com/addons.heroku.com/screenshots/1241/medium.png?1565861897)
 ##
 ##
