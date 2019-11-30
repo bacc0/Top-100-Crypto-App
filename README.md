@@ -1,7 +1,7 @@
 ### To the App:    https://top-cryptocurrency.herokuapp.com
 
 ##
- ![Alt Text](https://bacc0.github.io/v/pics/table.png)
+ ![Alt Text](https://bacc0.github.io/v/img/table.png)
 ##
 ##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
